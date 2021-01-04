@@ -1,0 +1,272 @@
+header {
+    position: fixed;
+    z-index: 10;
+
+    .nav-icons {
+        text-align: center;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        z-index: 100;
+        background: $darkvio;
+        border-radius: 0 30px 30px 0;
+        transition: $base ease;
+
+        &:hover {
+            width: 70px;
+            transition: $base ease;
+        }
+
+        .menu {
+            color: $gold;
+            font-size: 2rem;
+            padding: 10px 13px 0 0;
+            float: right;
+
+            &:hover {
+                transform: scale(1.1);
+                transition: $base ease;
+                cursor: pointer;
+            }
+        }
+
+        .cross {
+            color: $gold;
+            display: none;
+            font-size: 2rem;
+            padding: 10px 20px 0 0;
+            float: right;
+
+            &:hover {
+                transform: scale(1.1);
+                transition: $base ease;
+                cursor: pointer;
+            }
+        }
+    }
+
+    nav {
+        width: 200px;
+        height: 100vh;
+        font-family: Montserrat, sans-serif;
+        font-weight: 500;
+        background: $darkvio;
+        position: fixed;
+        left: -200px;
+        transition: $half;
+        z-index: 3;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-around;
+            padding: 0;
+            margin: 0;
+
+            li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 6rem;
+                list-style: none;
+                width: 100%;
+                text-align: center;
+                transform-style: preserve-3d;
+
+                &:hover {
+                    background-color: $lightvio;
+                    cursor: pointer;
+
+                    a {
+                        &::after {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                a {
+
+                    &::after {
+                        content: '';
+                        display: block;
+                        width: 0;
+                        height: 3px;
+                        background: $gold;
+                        transition: width $base ease;
+                    }
+
+
+                    // &.current::after {
+                    //     margin: auto;
+                    //     width: 50%;
+                    // }
+                }
+            }
+        }
+
+        .ul1 {
+            height: 67vh;
+            align-items: end;
+            margin-top: 60px;
+        }
+
+        .ul2 {
+            height: 20vh;
+            align-items: end;
+            margin-top: 60px;
+        }
+    }
+
+    #about {
+        text-align: center;
+        font-family: Montserrat, sans-serif;
+        height: 100vh;
+        width: 100vw;
+        background: $darkvio;
+        color: $gold;
+        position: absolute;
+        top: 0;
+        left: -100vw;
+        transition: $half;
+        z-index: 2;
+
+        h2 {
+            padding: $pTitle;
+        }
+
+        #questions {
+            height: 50%;
+
+            #who {
+
+                .team {
+                    padding-left: 120px;
+                    width: 85%;
+                    max-height: 250px;
+                    overflow-y: hidden;
+                    margin: auto;
+                    display: none;
+                    opacity: 0;
+
+                    .member {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        
+                        img {
+                            width: 70%;
+                            border-radius: 50%;
+                            margin-top: 30px;
+                            padding-bottom: 10px;
+                        }
+                    }
+
+                    &.show-mem {
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        opacity: 1;
+                        transition: opacity $base ease 0.1s;
+                    }
+                }
+            }
+
+            h3 {
+                width: 80%;
+                height: 2rem;
+                text-align: left;
+                padding-left: 20%;
+                margin-top: 3rem;
+                transition: $base ease;
+
+                &:hover {
+                    cursor: pointer;
+                    transform: translateX(5px);
+                    transition: $base ease;
+                }
+            }
+
+            p {
+                width: 50%;
+                display: none;
+                text-align: left;
+                padding: $pTxt;
+            }
+        }
+
+        .fa-arrow-left {
+            font-size: 2rem;
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+
+            &:hover {
+                transform: scale(1.1);
+                transition: 0.2s ease;
+                cursor: pointer;
+            }
+        }
+
+        .logo {
+            transform: scale(0.6);
+            position: absolute;
+            right: -100px;
+            bottom: -90px;
+        }
+    }
+
+    #ml {
+        text-align: center;
+        font-family: $mont;
+        color: $gold;
+        height: 100vh;
+        width: 100vw;
+        background: $darkvio;
+        position: absolute;
+        top: 0;
+        left: -128vw;
+        transition: $half ease;
+        z-index: 2;
+
+        h2 {
+            padding: $pTitle;
+        }
+
+        .mlcontent {
+            width: 70%;
+            height: 80%;
+            padding: $pBox;
+            margin: $mBox;
+            background: $faded;
+            overflow: auto;
+            text-align: justify;
+            border-radius: 20px 20px 0 0;
+
+            ::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        .fa-arrow-left {
+            font-size: 2rem;
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+
+            &:hover {
+                transform: scale(1.1);
+                transition: 0.2s ease;
+                cursor: pointer;
+            }
+        }
+
+        img {
+            transform: scale(0.6);
+            position: absolute;
+            right: -100px;
+            bottom: -90px;
+        }
+    }
+}

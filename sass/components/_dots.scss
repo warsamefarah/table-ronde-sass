@@ -1,0 +1,59 @@
+.dot_1 {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    z-index: 2;
+    position: absolute;
+    bottom: 49%;
+    left: 235vw;
+    transition: $base ease;
+
+    &:hover {
+        transform: scale(1.2);
+        transform-origin: center;
+        transition: $base ease;
+        cursor: pointer;
+    }
+}
+
+.dot_2 {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    z-index: 2;
+    position: absolute;
+    bottom: 49%;
+    left: 260vw;
+    transition: $base ease;
+
+    &:hover {
+        transform: scale(1.2);
+        transform-origin: center;
+        transition: $base ease;
+        cursor: pointer;
+    }
+}
+
+.dot_3 {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    z-index: 2;
+    position: absolute;
+    bottom: 49%;
+    left: 285vw;
+    transition: $base ease;
+
+    &:hover {
+        transform: scale(1.2);
+        transform-origin: center;
+        transition: $base ease;
+        cursor: pointer;
+    }
+}
+
+.dot {
+    input[type=radio] {
+        display: none;
+    }
+}

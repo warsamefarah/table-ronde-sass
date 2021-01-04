@@ -1,0 +1,47 @@
+main {
+
+    .coverBlack{
+        width: 100vw;
+        height : 100%;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.5);
+        z-index : 1;
+    }
+
+    .sect1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        box-sizing: border-box;
+        align-content: start;
+        background: url(../../assets/img/Camelot.jpg);
+        background-size: cover;
+
+        .title {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            // justify-content: center;
+            align-items: center;
+            z-index : 2;
+            margin-top : 150px;
+
+            h1 {
+                font-family: Montserrat, sans-serif;
+                width: 100%;
+                font-size: 80px;
+                text-align: center;
+                color: white;
+            }
+
+            a {
+                width: 100%;
+                font-size: 30px;
+                color: white;
+                text-align: center;
+            }
+        }
+
+    }
+}

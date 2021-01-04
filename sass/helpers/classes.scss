@@ -1,0 +1,27 @@
+.show-nav {
+    left: 0;
+    box-shadow: 22px 0 30px rgba(0, 0, 0, 0.5);
+}
+
+#about.show-about, #ml.show-about {
+    left: 0;
+}
+
+[class^="dot_"] {
+    &.dot-color {
+        background-color: $gold;
+        outline: 3px solid $darkvio;
+        outline-offset: 3px;
+        transform: rotate(45deg);
+
+        &:hover {
+        transform: rotate(45deg);
+        }
+    }
+}
+
+// .show-art {
+//     top: -50px;
+//     transition: $half;
+// }
+

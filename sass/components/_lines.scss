@@ -1,0 +1,45 @@
+.line1 {
+    width: 100vw;
+    height: 10px;
+    background-color: $gold;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    bottom: 6rem;
+    opacity: 0.5;
+}
+
+.line2 {
+    width: 100vw;
+    height: 10px;
+    background-color: black;
+    z-index: 1;
+    position: absolute;
+    left: 100vw;
+    bottom: 6rem;
+    opacity: 0.5;
+}
+
+.line3 {
+    width: 27vw;
+    height: 10px;
+    background-color: black;
+    z-index: 1;
+    position: absolute;
+    left: 200vw;
+    bottom: 6rem;
+    opacity: 0.5;
+    transform: rotate(-47deg);
+    transform-origin: left;
+}
+
+.line4 {
+    width: 81vw;
+    height: 10px;
+    background-color: black;
+    z-index: 1;
+    position: absolute;
+    left: 219vw;
+    bottom: 50%;
+    opacity: 0.5;
+}
