@@ -327,6 +327,12 @@ main .sect1 .title a {
   font-size: 30px;
   color: white;
   text-align: center;
+  transition: 0.2s;
+}
+main .sect1 .title a:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.2s;
 }
 
 main .sect2 {
