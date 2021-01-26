@@ -14,6 +14,17 @@
         transition: $base ease;
         cursor: pointer;
     }
+
+    &::before {
+        width: 200px;
+        height: 200px;
+        content: 'Le fils légitime';
+        position: inherit;
+        top: -100px;
+        left: -60px;
+        font-family: Montserrat, sans-serif;
+        font-size: 1.5rem;
+    }
 }
 
 .dot_2 {
