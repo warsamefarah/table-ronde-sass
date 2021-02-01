@@ -433,6 +433,7 @@ main .sect3 .art2 {
 main .sect3 .art2 img {
   width: 400px;
   height: auto;
+  box-shadow: 5px 5px 8px #0000004d;
 }
 main .sect3 .art2::before {
   width: fit-content;
