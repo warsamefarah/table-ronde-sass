@@ -6,12 +6,13 @@ main {
             margin-left: 10%;
             width: 100%;
             font-size: 60px;
+            font-family: Montserrat, sans-serif;
         }
 
         .art1 {
             width: 600px;
             height: 300px;
-            background-color: grey;
+            background-color: $gold;
             position: absolute;
             left: 236vw;
             bottom: 10%;
@@ -22,12 +23,24 @@ main {
             opacity: 0;
             padding: 0 3rem;
             font-size: 1rem;
+            box-shadow: 10px 10px 8px #0000004d;
+            font-family: Roboto, sans-serif;
+
+            &::before {
+                width: fit-content;
+                height: 200px;
+                content: 'Le fils légitime';
+                position: inherit;
+                top: -300px;
+                font-family: Montserrat, sans-serif;
+                font-size: 2rem;
+            }
         }
 
         .art2 {
             width: 600px;
             height: 300px;
-            background-color: grey;
+            background-color: $gold;
             position: absolute;
             left: 261vw;
             transform: translateX(-50%);
@@ -35,20 +48,29 @@ main {
             justify-content: center;
             align-items: center;
             opacity: 0;
+            box-shadow: 10px 10px 8px #0000004d;
+            font-family: Roboto, sans-serif;
 
-            &::after {
-                width: 0; 
-                height: 0; 
-                border-left: 5px solid transparent;
-                border-right: 5px solid transparent;
-                border-bottom: 5px solid black;
+            img {
+                width: 400px;
+                height: auto;
+            }
+
+            &::before {
+                width: fit-content;
+                height: 200px;
+                content: 'Content';
+                position: inherit;
+                bottom: -500px;
+                font-family: Montserrat, sans-serif;
+                font-size: 2rem;
             }
         }
 
         .art3 {
             width: 600px;
             height: 300px;
-            background-color: grey;
+            background-color: $gold;
             position: absolute;
             left: 286vw;
             bottom: 10%;
@@ -57,6 +79,18 @@ main {
             justify-content: center;
             align-items: center;
             opacity: 0;
+            box-shadow: 10px 10px 8px #0000004d;
+            font-family: Roboto, sans-serif;
+
+            &::before {
+                width: fit-content;
+                height: 200px;
+                content: 'Content';
+                position: inherit;
+                top: -300px;
+                font-family: Montserrat, sans-serif;
+                font-size: 2rem;
+            }
         }
     }
 }

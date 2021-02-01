@@ -22,6 +22,15 @@ $(document).ready(function () {
         }
     });
 
+    $('.sect1 a').click(function() {
+    TweenMax.fromTo('.line2', {scaleX: 0, transformOrigin: '0 100%'}, {scaleX: 1, duration: 1, delay: 0.5, ease: 'power1.inOut'});
+    })
+
+    $('.sect2 a').click(function() {
+      TweenMax.fromTo('.line3', {scaleX: 0, transformOrigin: '0 105%'}, {scaleX: 1, duration: 1, delay: 0.5, ease: 'power1.inOut'});
+      TweenMax.fromTo('.line4', {scaleX: 0, transformOrigin: '0 105%'}, {scaleX: 1, duration: 1, delay: 1.4, ease: 'power1.inOut'});
+      })
+
     $(document).click(function (e) {
         if (!$(e.target).hasClass('dot')) {
           $('input[type=radio]').prop( "checked", false );

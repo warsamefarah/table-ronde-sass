@@ -12,7 +12,12 @@
   background-color: #FFD166;
   outline: 3px solid #53082F;
   outline-offset: 3px;
+  transform: rotate(45deg);
 }
+[class^=dot_].dot-color:hover {
+  transform: rotate(45deg);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -347,12 +352,14 @@ main .sect2 .part1 h2 {
   margin-left: 10%;
   width: 100%;
   font-size: 60px;
+  font-family: Montserrat, sans-serif;
 }
 main .sect2 .part1 p {
   width: 100%;
   font-size: 24px;
   margin-left: 5%;
   margin-top: 10%;
+  font-family: Roboto, sans-serif;
 }
 main .sect2 .part1 p::first-letter {
   font-size: 72px;
@@ -369,6 +376,8 @@ main .sect2 .part2 p {
   width: 100%;
   font-size: 24px;
   margin-left: 10%;
+  margin-right: 10%;
+  font-family: Roboto, sans-serif;
 }
 main .sect2 .part2 img {
   height: 400px;
@@ -379,11 +388,12 @@ main .sect3 h2 {
   margin-left: 10%;
   width: 100%;
   font-size: 60px;
+  font-family: Montserrat, sans-serif;
 }
 main .sect3 .art1 {
   width: 600px;
   height: 300px;
-  background-color: grey;
+  background-color: #FFD166;
   position: absolute;
   left: 236vw;
   bottom: 10%;
@@ -394,11 +404,22 @@ main .sect3 .art1 {
   opacity: 0;
   padding: 0 3rem;
   font-size: 1rem;
+  box-shadow: 10px 10px 8px #0000004d;
+  font-family: Roboto, sans-serif;
+}
+main .sect3 .art1::before {
+  width: fit-content;
+  height: 200px;
+  content: "Le fils légitime";
+  position: inherit;
+  top: -300px;
+  font-family: Montserrat, sans-serif;
+  font-size: 2rem;
 }
 main .sect3 .art2 {
   width: 600px;
   height: 300px;
-  background-color: grey;
+  background-color: #FFD166;
   position: absolute;
   left: 261vw;
   transform: translateX(-50%);
@@ -406,18 +427,26 @@ main .sect3 .art2 {
   justify-content: center;
   align-items: center;
   opacity: 0;
+  box-shadow: 10px 10px 8px #0000004d;
+  font-family: Roboto, sans-serif;
 }
-main .sect3 .art2::after {
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid black;
+main .sect3 .art2 img {
+  width: 400px;
+  height: auto;
+}
+main .sect3 .art2::before {
+  width: fit-content;
+  height: 200px;
+  content: "Content";
+  position: inherit;
+  bottom: -500px;
+  font-family: Montserrat, sans-serif;
+  font-size: 2rem;
 }
 main .sect3 .art3 {
   width: 600px;
   height: 300px;
-  background-color: grey;
+  background-color: #FFD166;
   position: absolute;
   left: 286vw;
   bottom: 10%;
@@ -426,6 +455,17 @@ main .sect3 .art3 {
   justify-content: center;
   align-items: center;
   opacity: 0;
+  box-shadow: 10px 10px 8px #0000004d;
+  font-family: Roboto, sans-serif;
+}
+main .sect3 .art3::before {
+  width: fit-content;
+  height: 200px;
+  content: "Content";
+  position: inherit;
+  top: -300px;
+  font-family: Montserrat, sans-serif;
+  font-size: 2rem;
 }
 
 .svgffffff {
@@ -471,7 +511,7 @@ header nav ul li div {
 
 .line1 {
   width: 100vw;
-  height: 10px;
+  height: 30px;
   background-color: #FFD166;
   z-index: 2;
   position: absolute;
@@ -482,7 +522,7 @@ header nav ul li div {
 
 .line2 {
   width: 100vw;
-  height: 10px;
+  height: 30px;
   background-color: black;
   z-index: 1;
   position: absolute;
@@ -493,11 +533,11 @@ header nav ul li div {
 
 .line3 {
   width: 27vw;
-  height: 10px;
+  height: 30px;
   background-color: black;
   z-index: 1;
   position: absolute;
-  left: 200vw;
+  left: 200.5vw;
   bottom: 6rem;
   opacity: 0.5;
   transform: rotate(-47deg);
@@ -506,7 +546,7 @@ header nav ul li div {
 
 .line4 {
   width: 81vw;
-  height: 10px;
+  height: 30px;
   background-color: black;
   z-index: 1;
   position: absolute;
@@ -516,41 +556,41 @@ header nav ul li div {
 }
 
 .circle1 {
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
   background-color: #53082F;
   border-radius: 50%;
   z-index: 2;
   position: absolute;
-  bottom: 5.4rem;
-  left: 99.5vw;
+  bottom: 5.5rem;
+  left: 99vw;
 }
 
 .circle2 {
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
   background-color: #53082F;
   border-radius: 50%;
   z-index: 2;
   position: absolute;
-  bottom: 5.4rem;
+  bottom: 5.5rem;
   left: 199vw;
 }
 
 .circle3 {
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
   background-color: #53082F;
   border-radius: 50%;
   z-index: 2;
   position: absolute;
   bottom: 49%;
-  left: 218vw;
+  left: 217.5vw;
 }
 
 .circle4 {
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
   background-color: #53082F;
   border-radius: 50%;
   z-index: 2;
@@ -565,25 +605,15 @@ header nav ul li div {
   background-color: black;
   z-index: 2;
   position: absolute;
-  bottom: 49%;
+  bottom: 50%;
   left: 235vw;
   transition: 0.2s ease;
 }
 .dot_1:hover {
-  transform: scale(1.2);
+  transform: scale(1.4);
   transform-origin: center;
   transition: 0.2s ease;
   cursor: pointer;
-}
-.dot_1::before {
-  width: 200px;
-  height: 200px;
-  content: "Le fils légitime";
-  position: inherit;
-  top: -100px;
-  left: -60px;
-  font-family: Montserrat, sans-serif;
-  font-size: 1.5rem;
 }
 
 .dot_2 {
@@ -592,12 +622,12 @@ header nav ul li div {
   background-color: black;
   z-index: 2;
   position: absolute;
-  bottom: 49%;
+  bottom: 50%;
   left: 260vw;
   transition: 0.2s ease;
 }
 .dot_2:hover {
-  transform: scale(1.2);
+  transform: scale(1.4);
   transform-origin: center;
   transition: 0.2s ease;
   cursor: pointer;
@@ -609,12 +639,12 @@ header nav ul li div {
   background-color: black;
   z-index: 2;
   position: absolute;
-  bottom: 49%;
+  bottom: 50%;
   left: 285vw;
   transition: 0.2s ease;
 }
 .dot_3:hover {
-  transform: scale(1.2);
+  transform: scale(1.4);
   transform-origin: center;
   transition: 0.2s ease;
   cursor: pointer;
@@ -622,6 +652,36 @@ header nav ul li div {
 
 .dot input[type=radio] {
   display: none;
+}
+
+.container .horizontal .sect1 #backToStart {
+  width: 50px;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 100%;
+  position: fixed;
+  right: 2%;
+  top: 2%;
+  font-size: 2rem;
+  z-index: 50;
+  background-color: #53082F;
+  color: #FFD166;
+  transition: 0.2s;
+  opacity: 0.5;
+  display: none;
+}
+.container .horizontal .sect1 #backToStart:hover {
+  cursor: pointer;
+  background-color: #8d074c;
+  transform: scale(1.2);
+  opacity: 1;
+}
+.container .horizontal .sect1 #backToStart:active {
+  transform: scale(1.3);
+}
+.container .horizontal .sect1 #backToStart i {
+  margin-right: 10%;
 }
 
 /*# sourceMappingURL=style.css.map */

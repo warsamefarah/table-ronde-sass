@@ -4,26 +4,15 @@
     background-color: black;
     z-index: 2;
     position: absolute;
-    bottom: 49%;
+    bottom: 50%;
     left: 235vw;
     transition: $base ease;
 
     &:hover {
-        transform: scale(1.2);
+        transform: scale(1.4);
         transform-origin: center;
         transition: $base ease;
         cursor: pointer;
-    }
-
-    &::before {
-        width: 200px;
-        height: 200px;
-        content: 'Le fils légitime';
-        position: inherit;
-        top: -100px;
-        left: -60px;
-        font-family: Montserrat, sans-serif;
-        font-size: 1.5rem;
     }
 }
 
@@ -33,12 +22,12 @@
     background-color: black;
     z-index: 2;
     position: absolute;
-    bottom: 49%;
+    bottom: 50%;
     left: 260vw;
     transition: $base ease;
 
     &:hover {
-        transform: scale(1.2);
+        transform: scale(1.4);
         transform-origin: center;
         transition: $base ease;
         cursor: pointer;
@@ -51,12 +40,12 @@
     background-color: black;
     z-index: 2;
     position: absolute;
-    bottom: 49%;
+    bottom: 50%;
     left: 285vw;
     transition: $base ease;
 
     &:hover {
-        transform: scale(1.2);
+        transform: scale(1.4);
         transform-origin: center;
         transition: $base ease;
         cursor: pointer;

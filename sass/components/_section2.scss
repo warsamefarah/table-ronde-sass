@@ -16,6 +16,7 @@ main {
                 margin-left: 10%;
                 width: 100%;
                 font-size: 60px;
+                font-family: Montserrat, sans-serif;
             }
             
             p {
@@ -23,6 +24,7 @@ main {
                 font-size: 24px;
                 margin-left: 5%;
                 margin-top: 10%;
+                font-family: Roboto, sans-serif;
     
                 &::first-letter {
                     font-size: 72px;
@@ -42,6 +44,8 @@ main {
                 width: 100%;
                 font-size: 24px;
                 margin-left: 10%;
+                margin-right: 10%;
+                font-family: Roboto, sans-serif;
             }
 
             img {

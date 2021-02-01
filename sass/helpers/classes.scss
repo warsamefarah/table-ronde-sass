@@ -12,10 +12,10 @@
         background-color: $gold;
         outline: 3px solid $darkvio;
         outline-offset: 3px;
-        // transform: rotate(45deg);
+        transform: rotate(45deg);
 
         &:hover {
-        // transform: rotate(45deg);
+        transform: rotate(45deg);
         }
     }
 }

@@ -68,6 +68,22 @@ $(document).ready(function(){
       var element = document.scrollingElement || document.documentElement;
       element.addEventListener('wheel', transformScroll, {passive: true});
 
+    scrollbtn = document.getElementById("backToStart");
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollLeft > 1000 || document.documentElement.scrollLeft > 1000) {
+            scrollbtn.style.display = "block";
+        } else {
+            scrollbtn.style.display = "none";
+        }
+    }
+
+    $('#backToStart').click(function () {
+        $('html, body').animate({scrollLeft:0}, 50);
+    });
+
 });
 
 
